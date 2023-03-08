@@ -1,6 +1,6 @@
 ﻿# MMD6UnityTool_Custom
 ## Add Function
-- Mope(blendshape) animation automatic parsing
+- Morph( auto parsing included in animation
 - Warning that Morph(blendshape) included in the animation is not in the model
 ![image](https://user-images.githubusercontent.com/66342017/223606644-6f4d2316-c698-4730-a84c-d337bfeeb54d.png) <br>
 
