@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using MMD.VMD;
 using UnityEditor;
 using UnityEngine;
+using Cinemachine;
 
 public class VMDCameraConverter
 {
@@ -122,7 +123,8 @@ public class VMDCameraConverter
 
 		AnimationUtility.SetEditorCurve(clip, EditorCurveBinding.FloatCurve("Distance", typeof(Transform), "localPosition.z"), dis_curve);
 
-		AnimationUtility.SetEditorCurve(clip, EditorCurveBinding.FloatCurve("Distance/Camera", typeof(Camera), "field of view"), fov_curve);
+		//AnimationUtility.SetEditorCurve(clip, EditorCurveBinding.FloatCurve("Distance/Camera", typeof(Camera), "field of view"), fov_curve);
+		AnimationUtility.SetEditorCurve(clip, EditorCurveBinding.FloatCurve("Distance/Camera", typeof(CinemachineVirtualCamera), "m_Lens.FieldOfView"), fov_curve);
 	}
 
 	//经过观察得知interpolation前四位分别是(x1,x2)(y1,y2)
